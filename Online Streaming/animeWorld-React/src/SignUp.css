@@ -1,0 +1,207 @@
+.signup-container {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    place-content: center;
+    transition: all 250ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
+.signup-container.show {
+    visibility: visible;
+}
+
+.signup-tab{
+    opacity: 0;
+    width: 500px;
+    position: relative;
+    border-radius: 20px;
+    background-size: cover;
+    transform: translateY(-10%);
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: all 250ms ease-in-out;
+    background-image: url('./login-logo.jpg');
+}
+
+.signup-container.show .signup-tab {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.signup-header-h{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 30px 0px;
+    font-family: 'Helvetica Neue', Arial;
+}
+
+/* .signup-close{
+    float: right;
+    width: 30px;
+    height: 30px;
+    right: 20%;
+    position: absolute;
+    top: 22px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgb(143, 140, 140);
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.9;
+} */
+
+.signup-close:hover{
+    background-color: rgb(170, 6, 6);
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.signup-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 60px 30px ;
+    /* background-color: rgb(107, 103, 103); */
+}
+
+.signup-input {
+    border: 0;
+    width: 100%;
+    outline: none;
+    display: block;
+    margin-top: 8px;
+    color: #495057;
+    padding: 6px 12px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0.375rem 0.75rem;
+    height: calc(1.5em + 00.75rem + 2px);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.signup-input::placeholder {
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.signup-input-label {
+    opacity: 0.5;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.signup-input-div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signup-input-form {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-button {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    text-transform: capitalize;
+    background-color: #FF4656;
+    transition: all 150ms ease-in-out;
+}
+
+.signup-button:active {
+    transform: scale(0.95);
+}
+
+input#signup-show-pswd-check {
+    width: 1rem;
+    height: 1.25rem;
+    /* border-radius: 25px; */
+}
+
+.signup-show-pswd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.signup-check-label {
+    color: white;
+    cursor: pointer;
+    padding-left: 12px;
+    text-transform: capitalize;
+}
+
+.signup-redirect {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding: 12px 12px 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.signup-redirect span {
+    color: white;
+}
+
+.signup-redirect .redirect {
+    color: #FF4656;
+    margin: 0px 4px;
+    text-decoration: none;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.signup-close-button {
+    left: 97%;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    place-content: center;
+    background-color: white;
+    transition: background 150ms ease;
+}
+
+.signup-close-button:hover {
+    background-color: #FF4656;
+}
+
+.signup-close-button svg {
+    width: 15px;
+    height: 15px;
+    fill: #111111;
+}
+
+.signup-close-button:hover svg {
+    fill: white;
+}

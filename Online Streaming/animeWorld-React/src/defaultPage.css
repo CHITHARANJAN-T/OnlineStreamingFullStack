@@ -1,0 +1,155 @@
+.defaultPage{
+    /* background-color: black; */
+    width : 100%;
+    position: relative;
+    background-color: rgb(37, 35, 35);
+}
+
+.dpage-home-body{
+    width: 100%;
+    padding-bottom: 10px;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.019)),url("./zoro-bg.jpg");
+}
+
+.dpage-home{
+    width : 100%;
+    height: 100%;
+}
+
+.dpage-home-link{
+    width: 20%;
+    /* background-color: blue; */
+    padding-left: 39%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.home-link-logo{
+    width: 100%;
+    height: 90%;
+    opacity: 0.8;
+}
+
+.dpage-input-div{
+    /* background-color: brown; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8%;
+}
+
+.dpage-input-box{
+    width: 80%;
+    height: 80%;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.dpage-search-div{
+    cursor: pointer;
+    opacity: 0.5;
+    width: 50px;
+    height: 95%;
+    margin-left: 15px;
+    background-color: rgb(143, 140, 140);
+    border-radius: 100%;
+    transition: all 150ms ease-in-out;
+}
+
+.dpage-search-icon{
+    width: 55%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dpge-home-vlink{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 22px;
+    /* font-weight: 900; */
+    background-color: rgba(153, 153, 153, 0.766);
+    /* background-color: black; */
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+
+
+.dpge-home-vlink-a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dpge-home-vlink-icon{
+    padding-left: 15px;
+}
+
+.dpage-container {
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dpage-details{
+    width : 80%;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: "Montserrat", Arial;
+    background-color:rgba(20, 19, 19, 0.886);
+}
+
+.dpage-details-h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dpage-details-p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.dpage-details-li{
+    margin-bottom: 20px;
+}
+
+.dpge-home-vlink:hover{
+    background-color: #FF4656;
+}
+
+.dpge-home-vlink:active {
+    transform: scale(0.98);
+}
+
+.dpage-search-div:hover{
+    opacity: 1;
+}
+
+.dpage-search-div:active{
+    opacity: 1;
+    transform: scale(0.95);
+}
